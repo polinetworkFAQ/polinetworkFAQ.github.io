@@ -1,24 +1,24 @@
- - type: inner_node
-   answer: N/A
+ - type: question
    key: Frequenti il Politecnico?
    sub_nodes:
-    - type: leaf
-      answer: "No"
-      key: Guida per esterni
-    - type: inner_node
-      answer: "Sì"
-      key: Sei una matricola?
+    - type: answer
+      key: "No"
       sub_nodes:
-       - type: inner_node
-         answer: "Sì"
+        - type: guide
+          key: Guida iscrizione
+    - type: answer
+      key: "Sì"
+      sub_nodes:
+       - type: question
          key: Di informatica?
          sub_nodes:
-           - type: leaf
-             answer: "Sì"
-             key: Guida per informatici
-           - type: leaf
-             answer: "No"
-             key: Iscriviti ad informatica!
-       - type: leaf
-         answer: "No"
-         key: Guida anni successivi
+           - type: answer
+             key: "Sì"
+             sub_nodes:
+              - type: guide
+                key: Guida per informatici
+          - type: answer
+            key: "No"
+            sub_nodes:
+              - type: guide
+                key: Iscriviti ad informatica!

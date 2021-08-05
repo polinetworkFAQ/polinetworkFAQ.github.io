@@ -1,0 +1,12 @@
+{% for item in include.data_tree %}
+
+  <div class="{{ item.type }}">
+    <span>{{ item.key }}</span>
+
+    {% if item.sub_nodes %}
+      {% include tree.html data_tree=item.sub_nodes %}
+    {% endif %}
+
+  </div>
+
+{% endfor %}
