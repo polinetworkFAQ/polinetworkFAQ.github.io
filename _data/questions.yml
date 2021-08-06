@@ -9,16 +9,16 @@
     - type: answer
       key: "Sì"
       sub_nodes:
-       - type: question
-         key: Di informatica?
-         sub_nodes:
+        - type: question
+          key: Sei iscritto ad Informatica?
+          sub_nodes:
+           - type: answer
+             key: "No"
+             sub_nodes:
+               - type: guide
+                 key: Iscriviti ad Informatica!
            - type: answer
              key: "Sì"
              sub_nodes:
-              - type: guide
-                key: Guida per informatici
-          - type: answer
-            key: "No"
-            sub_nodes:
-              - type: guide
-                key: Iscriviti ad informatica!
+               - type: guide
+                 key: Ottimo!

@@ -1,6 +1,6 @@
 {% for item in include.data_tree %}
 
-  <div class="{{ item.type }}">
+  <div id="{{ item.type }}">
     <span>{{ item.key }}</span>
 
     {% if item.sub_nodes %}
