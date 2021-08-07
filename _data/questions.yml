@@ -1,24 +1,35 @@
- - type: question
+ - type: first question
    key: Frequenti il Politecnico?
    sub_nodes:
-    - type: answer
-      key: "No"
-      sub_nodes:
-        - type: guide
-          key: Guida iscrizione
-    - type: answer
-      key: "Sì"
-      sub_nodes:
-        - type: question
-          key: Sei iscritto ad Informatica?
-          sub_nodes:
-           - type: answer
-             key: "No"
-             sub_nodes:
-               - type: guide
-                 key: Iscriviti ad Informatica!
-           - type: answer
-             key: "Sì"
-             sub_nodes:
-               - type: guide
-                 key: Ottimo!
+     - type: answer
+       key: "No"
+       sub_nodes:
+         - type: first question
+           key: Hai intenzione di frequentarlo?
+           sub_nodes:
+             - type: answer
+               key: "Sì"
+               sub_nodes:
+                 - type: guide
+                   key: Evvai!
+             - type: answer
+               key: "No"
+               sub_nodes:
+                 - type: guide
+                   key: :/
+     - type: answer
+       key: "Sì"
+       sub_nodes:
+         - type: question
+           key: Sei iscritto ad Informatica?
+           sub_nodes:
+             - type: answer
+               key: "No"
+               sub_nodes:
+                 - type: guide
+                   key: Iscriviti ad Informatica!
+             - type: answer
+               key: "Sì"
+               sub_nodes:
+                 - type: guide
+                   key: Ottimo!
