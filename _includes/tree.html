@@ -1,7 +1,12 @@
 {% for item in include.data_tree %}
 
-  <div id="{{ item.type }}">
-    <span>{{ item.key }}</span>
+  <div class="{{ item.type }}">
+
+    {% if item.type == "answer" %}
+      <a onclick="stepForward(this)" href="#">{{ item.key }}</a>
+    {% else %}
+      <span>{{ item.key }}</span>
+    {% endif %}
 
     {% if item.sub_nodes %}
       {% include tree.html data_tree=item.sub_nodes %}

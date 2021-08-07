@@ -1,4 +1,4 @@
-#question, #answer, #guide
+.question, .answer, .guide
 {
   visibility: hidden;
 }
